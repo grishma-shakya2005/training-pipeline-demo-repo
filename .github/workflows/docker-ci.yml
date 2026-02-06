@@ -23,3 +23,7 @@ jobs:
     - name: update and upgrade
       run: 
         sudo apt update && sudo apt upgrade -y
+
+    - name: remove old docker images
+      run:
+        sudo docker system prune -a
