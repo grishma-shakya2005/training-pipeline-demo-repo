@@ -21,6 +21,5 @@ jobs:
       run: docker run hello-python
 
     - name: update and upgrade
-      run: |
+      run: 
         sudo apt update && sudo apt upgrade -y
-        
